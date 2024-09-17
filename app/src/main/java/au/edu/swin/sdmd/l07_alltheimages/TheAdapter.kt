@@ -1,5 +1,6 @@
 package au.edu.swin.sdmd.l07_alltheimages
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,7 +22,13 @@ class TheAdapter(private val data: List<Location>,
 
     override fun onBindViewHolder(holder: TheAdapter.TheHolder, position: Int) {
         val item = data[position]
+        //holder.setIsRecyclable(false)
         holder.bind(item)
+    }
+
+    override fun onViewRecycled(holder: TheAdapter.TheHolder) {
+        Log.i("RECYCLE", holder.adapterPosition.toString())
+        super.onViewRecycled(holder)
     }
 
     inner class TheHolder(private val v: View) : RecyclerView.ViewHolder(v) {

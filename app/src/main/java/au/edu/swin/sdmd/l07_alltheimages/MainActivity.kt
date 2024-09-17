@@ -69,6 +69,34 @@ class MainActivity : AppCompatActivity() {
         data.add(Location("Office building", "unknown",
             -37.822170f, 145.029600f))
 
+        data.add(Location("More1", "unknown",
+            -37.822170f, 145.029600f))
+        data.add(Location("More2",  "unknown",
+            -37.822170f, 145.029600f))
+        data.add(Location("More3", "unknown",
+            -37.822170f, 145.029600f))
+        data.add(Location("More4", "unknown",
+            -37.822170f, 145.029600f))
+        data.add(Location("More4", "unknown",
+            -37.822170f, 145.029600f))
+        data.add(Location("More4", "unknown",
+            -37.822170f, 145.029600f))
+        data.add(Location("More4", "unknown",
+            -37.822170f, 145.029600f))
+        data.add(Location("More4", "unknown",
+            -37.822170f, 145.029600f))
+        data.add(Location("More4", "unknown",
+            -37.822170f, 145.029600f))
+        data.add(Location("More4", "unknown",
+            -37.822170f, 145.029600f))
+        data.add(Location("More4", "unknown",
+            -37.822170f, 145.029600f))
+        data.add(Location("More4", "unknown",
+            -37.822170f, 145.029600f))
+        data.add(Location("More4", "unknown",
+            -37.822170f, 145.029600f))
+        for (i in 1..500) data.add(Location("Sarawak", "unknown", 1.5324f, 110.3572f))
+
         return data
     }
 }
